@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+
+<title>
+Lets Make Automation Easy
+</title>
+<head>
+<style>
+#div1, #div2 , #div3{
+  float: left;
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+#div6 , #div7 , #div8 , #div9{
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+}
+</style><script>
+
+	function login() 
+	{ 
+		var userName = document.getElementById("userName").value;
+		var password = document.getElementById("password").value;
+		
+		if(userName.trim()=="" || password.trim()==""){
+			if(userName.trim()==""){
+				document.getElementById("reqTxtuserName").innerHTML="* User Name is required.";
+			} else{
+				document.getElementById("reqTxtuserName").innerHTML="";
+			}
+			if(password.trim()==""){
+				document.getElementById("reqTxtpassword").innerHTML="* Password is required.";
+			} else{
+				document.getElementById("reqTxtpassword").innerHTML="";
+			}
+			return false;
+		} 
+
+		if(userName == "Pradeep" && password == "Password1"){
+			window.location.href = "LMAE_WelcomeWindow.html";
+		} else if(userName == "Nishant" && password == "Password2"){
+			window.location.href = "LMAE_WelcomeWindow.html";
+		} else if(userName == "Akriti" && password == "Password3"){
+			window.location.href = "LMAE_WelcomeWindow.html";
+		} else{
+			alert("OOPS! Something Weird Happened........");
+			window.location.href = "LMAE_LoginWindow.html";
+		}
+
+	};
+</script>
+</head>
+<body>
+<table border=0 align=center>
+<tr>
+	<td>
+			<table>
+	<tr><td><label>User Name<font color="red">*</font>:</label></td><td><input class="userNameClass" name="userName" id="userName" type="text" value="Pradeep"><span id="reqTxtuserName" class="reqError"></span></td>   </tr>
+	<tr><td><label>Password<font color="red">*</font>:</label></td><td><input name="password" id="password" type="password" value="Password@123"><span id="reqTxtpassword" class="reqError"></span></td></tr>
+	<tr>
+		<td colspan=2 align="right"><input type="button" id="login" value="Login" onclick="login();"></td>
+	</tr>
+</table>
+		</td>
+</tr>
+</table>
+
+</body>
+</html>
+
