@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+
+<title>
+Lets Make Automation Easy
+</title>
+<head>
+<style>
+#div1, #div2 , #div3{
+  float: left;
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+#div6 , #div7 , #div8 , #div9{
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+}
+</style><script>
+
+	function login() 
+	{ 
+		var userName = document.getElementById("userName").value;
+		var password = document.getElementById("password").value;
+		
+		if(userName.trim()=="" || password.trim()==""){
+			if(userName.trim()==""){
+				document.getElementById("reqTxtuserName").innerHTML="* User Name is required.";
+			} else{
+				document.getElementById("reqTxtuserName").innerHTML="";
+			}
+			if(password.trim()==""){
+				document.getElementById("reqTxtpassword").innerHTML="* Password is required.";
+			} else{
+				document.getElementById("reqTxtpassword").innerHTML="";
+			}
+			return false;
+		} 
+
+		if(userName == "Pradeep" && password == "Password@123"){
+			window.location.href = "LMAE_WelcomeWindow.html";
+		} else if(userName == "Nishant" && password == "Password2"){
+			window.location.href = "LMAE_WelcomeWindow.html";
+		} else if(userName == "Akriti" && password == "Password3"){
+			window.location.href = "LMAE_WelcomeWindow.html";
+		} else{
+			alert("OOPS! Something Weird Happened........");
+			window.location.href = "LMAE_LoginWindow.html";
+		}
+
+	};
+</script>
+</head>
+<body>
+
+<table border=0>
+<tr>
+	<td><img src="https://yt3.googleusercontent.com/Kbx45udjw9Q6ntTjuD6D8nvO8k1_6nVQybOMHJaKCFTGYhpQnK6dEyD4jDtAkkvPY3Td3lcn=s160-c-k-c0x00ffffff-no-rj" width="100" height="100" border="0" alt=""></td>
+	<td><font size="100" color="">Lets Make Automation Easy</font><br>Input Box Automation Practice Page</td>
+</tr>
+</table>
+<table border=10 align=center>
+<tr>
+	<td width=200 align=center>
+			<table>
+	<tr>
+		<td>
+			<a href="https://www.selenium.dev/" target="_blank" title="Selenium">Selenium</a>
+		</td>
+	</tr>	
+	<tr>
+		<td>
+			<a href="https://www.jmu.edu/apply-online" target="_blank" title="SoapUI">SoapUI</a>
+		</td>
+	</tr>	
+	<tr>
+		<td>
+			<a href="https://jmeter.apache.org/" target="_blank" title="Jmeter">Jmeter</a>
+		</td>
+	</tr>	
+	<tr>
+		<td>
+			<a href="https://playwright.dev/" target="_blank" title="Playwright">Playwright</a>
+		</td>
+	</tr>		
+	<tr>
+		<td>
+			<a href="https://www.jmu.edu/apply-online" target="_blank" title="Cucumber">Cucumber</a>
+		</td>
+	</tr>	
+	<tr>
+		<td>
+			<a href="https://www.postman.com/" target="_blank" title="Postman">Postman</a>
+		</td>
+	</tr>
+</table>
+		</td>
+	<td rowspan=2><a href="https://www.youtube.com/watch?v=vA4cqWwFphY&list=PLkJOnuuvS98YdgbAqaBNwu4hBpSw6eck3&pp=sAgC">
+		Click on Below Thumbnail to Run Video<br>
+		<img width="560" height="315" title="Click to Run" src="https://i.ytimg.com/vi/vA4cqWwFphY/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCNEtrrIQw8bIbmJ1bcor6mCVG-LQ"></img>
+		</a></td>
+</tr>
+</table>
+<table border=0 align=center>
+<tr>
+	<td><a href="https://www.youtube.com/@pradeepnailwal" target="_blank">Click Here to Visit my Channel</a></td>
+</tr>
+<tr></tr>
+<tr>
+	<td><U>You can share my youtube channel link to your friends</U><br>
+	https://www.youtube.com/@pradeepnailwal
+	</td>
+</tr>
+</table>
+</body>
+</html>
+
